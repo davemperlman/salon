@@ -5,7 +5,7 @@
 	var $time;
 	var sel = document.getElementById('available-times');
 
-	function init(){
+	function init2(){
 		$time = $('.time > span');
 		$( 'input[type=checkbox]' ).on( 'change', function(){
 			var $this = $( this );
@@ -28,7 +28,7 @@
 		} );
 	}
 
-	$(init);
+	$(init2);
 
 
 	$('#date').change( function(){
@@ -40,6 +40,10 @@
 				});
 			}, 'json');
 		});
+
+	$('#address').change( function(){
+		console.log(initMap())
+	});
 
 	// function submit(){
 	// 	var appointmentType = $('input[type=checkbox]:checked').map(function(){

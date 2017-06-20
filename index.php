@@ -30,10 +30,8 @@ if ( isset($_POST['submit']) ) {
 			<input type="text" name="name" id="name">
 
 			<label for="address">Address: </label>
-			<input type="text" name="address" id="address">
+			<input type="text" name="address" id="address" placeholder="190 Example Rd, City">
 
-			<label for="city">City: </label>
-			<input type="text" name="city" id="city">
 		</fieldset>
 		<fieldset id="fingers-set">
 			<legend>Fingers</legend>
